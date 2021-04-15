@@ -1,0 +1,65 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;300;400;700&display=swap');
+
+.flex-container {
+    background-color:#456 ;
+    height: 300px;
+    width: 600px;
+    margin-left: 30%;
+    margin-top: 10%;
+    position: relative;
+    border-radius: 10px;
+    position: relative;
+}
+
+.row {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+}
+.column {
+    color: white;
+    float: left;
+  }
+  
+  .left {
+    width: 35%;
+
+  }
+  
+  .right {
+    width: 65%;
+    font-family: 'Lato';
+    margin-top: 5%;
+  }
+
+  .right h2 {
+      font-family: 'Bebas Neue';
+      font-size: 5rem;
+      margin: 0;
+      height: .5rem;
+      
+  }
+
+  .right p {
+      font-family: "Lato";
+      font-weight: 300;
+      margin-top: 3rem;
+  }
+  .right h3 {
+      font-family:'Bebas Neue';
+      font-size: 1.1rem;
+      margin: 0;
+      padding-top: 1rem;
+      letter-spacing: .1rem;
+  }
+
+  .right .occupation {
+    font-family: "Lato";
+    font-weight: 300;
+    margin-top: 0;
+  }
+
+  img {
+    border-radius: 50%;
+    margin-top: 40%;
+  } 

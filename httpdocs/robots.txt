@@ -1,0 +1,4 @@
+Sitemap: https://jamesandhudsonfarm.com/sites/sitemap
+User-agent: *
+Disallow: /src/
+Disallow: /cache/

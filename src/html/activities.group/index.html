@@ -1,0 +1,84 @@
+{layout="layout/_wrapper"}
+{exp:channel:entries 
+    channel="activities" 
+    limit="1" 
+    url_title="{segment_2}" 
+    dynamic="no"
+    cache='yes' 
+    refresh='360' 
+    disable='member_data|pagination|categories'}
+
+{layout:set name="title"}{title} : Activities{/layout:set}
+{layout:set name="description"}{description:limit characters='147' end_char="..."}{/layout:set}
+
+<span class="parallax" style="display: inline-block; width: 100%; {if hero}background: url({hero}) center center no-repeat; background-size: cover;{if:else}background: url({thumbnail}) center center repeat-x; background-size: contain;{/if}">
+    <img style="opacity: 0; width: 100%; height: auto; max-height: 400px;" src="/img/hero-placeholder.png" alt="hero">
+</span>
+<section class="mt-0 pt-2 pb-5">
+    <div class="container">
+        <div class="row">
+            
+            {if no_results}{redirect='/#activities'}{/if}
+            <div class="col-md-12"> 
+                <div class="mt-5 pt-4 mb-4">
+                    <h1 class="header1 font-style2 text-center text-uppercase"><strong>{title}</strong></h1>
+                    <p class="font-style2 text-center text-x-large"><em>{subtitle}</em></p>
+                    <div class="text-large">{description}</div>
+
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+{/exp:channel:entries}
+
+</div>
+<div class="container">
+<div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+    <div class="col-md-3 col-sm-4 text-center">
+        <img class="rounded img-fluid mb-md-5 mt-5" width="240" src="/img/photo-manager.jpg" alt="manager" />
+    </div>
+    <div class="col-md-9 col-lg-8 mb-5 mt-5 text-sm-center text-md-left">
+        <h2 class="font-style1 header2">How to book activities at the ranch</h2>
+        <p class="font-style2 text-large">Activities can be arranged after booking by contacting 
+            the Ranch Manager.</p>
+        <p class="font-style2 text-large pb-3">    
+            Chris is a knowledgeable outdoor guide and is available
+            on-site for all your needs during your stay at the ranch. </p>
+        <a href="/contact" class="btn-box-border mt-3">Contact Chris</a>
+    </div>
+</div>
+</div>
+
+<div class="clearfix" style="height: 40px;"></div>
+<section class="bg-green mt-5 pt-4 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h2 class="text-center mt-4 pt-3 text-white font-style1 header2">Browse More Activities at the Ranch</h2>
+                <p class="font-style2 text-white  text-center text-x-large"><em>Plenty of Adventures here</em></p>
+               
+            </div>
+        </div>
+        <div class="row mt-5">
+            {exp:channel:entries channel="activities" limit="3" url_title="not {segment_2}" dynamic="no"}
+            <div class="col-md-4"> 
+              <div class="card text-center">
+                      <a href="{title_permalink='activities'}">
+                          <span class="card-image lazy-image" 
+                                data-style="background: url({thumbnail}) center no-repeat;"
+                                data-class="img-fluid"
+                                data-image="/img/img-sqr_placeholder.gif">
+                            </span>
+                          <span class="card-text">
+                              <h5 class="mb-4">{title}</h5>
+                          </span>
+                      </a>
+              </div>
+            </div>
+            {/exp:channel:entries}
+        </div>
+    </div>
+  </section>

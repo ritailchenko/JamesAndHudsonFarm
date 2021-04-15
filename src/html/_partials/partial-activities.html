@@ -1,0 +1,36 @@
+<div class="clearfix" style="height: 40px;"></div>
+    <section class="bg-green mt-5 pt-4 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h2 class="text-center mt-4 pt-3 text-white font-style1 header2">Browse Activities at the Ranch</h2>
+                <p class="font-style2 text-white  text-center text-x-large"><em>Plenty of Adventures here</em></p>
+               
+            </div>
+        </div>
+        <div class="row mt-5">
+            {exp:channel:entries channel="activities" limit="3" orderby="random" dynamic="no"}
+            <div class="col-md-4"> 
+              <div class="card text-center">
+                      <a href="{title_permalink='activities'}">
+                          <span class="card-image lazy-image" 
+                                data-style="background: url({thumbnail}) center no-repeat;"
+                                data-class="img-fluid"
+                                data-image="/img/img-sqr_placeholder.gif"
+                                >
+                          </span>
+                          <span class="card-text">
+                              <h5 class="mb-4">{title}</h5>
+                          </span>
+                      </a>
+              </div>
+            </div>
+            {/exp:channel:entries}
+        </div>
+    </div>
+    <a href="#activities" class="jumper view-more">
+        <img src="/img/icon-arrow_down.svg" alt="arrow down" aria-hidden="true">
+        <span>More Activities</span>
+    </a>
+  </section>

@@ -1,0 +1,56 @@
+{layout="layout/_wrapper" title="About"}
+
+<section class="intro text-center">
+    <div class="main-hero">
+        <div><img class="img-fluid" src="/img/hero-slide-02.jpg" alt="night sky"></div>
+        <div><img class="img-fluid" data-lazy="/img/hero-slide-03.jpg" alt="aerial view"></div>
+        <div><img class="img-fluid" data-lazy="/img/hero-living-room.jpg" alt="living room"></div>
+        <div><img class="img-fluid" data-lazy="/img/hero-slide-06.jpg" alt="window view"></div>
+        <div><img class="img-fluid" data-lazy="/img/hero-slide-11.jpg" alt="side view"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+  
+        <div class="row">
+  
+            <div class="col-md-12"> 
+                <div class="mt-2 pt-4">
+                    <h1 class="header1 font-style2 text-center text-uppercase">About<br><strong>Seven Castles Ranch</strong></h1>
+
+                    <p class="mt-4 pt-2 mb-4 pb-4 text-large text-center">7 Castles Ranch is a breathtaking property set on the western slope of the Continental Divide on the Frying Pan River. Five miles above Basalt, Colorado on Frying Pan road, 7 Castles Ranch offers spectacular western daylight views and star filled nights with the expansive White River National Forest literally at your doorstep. Genuine ranch adventures, world-class private fishing, on your own ranch river water, wilderness hiking in your backyard and much more awaits you.</p>
+                    <p class="mt-4 pt-2 mb-4 pb-4 text-large text-center">A completely remodeled classic Aspen “A frame” that has a spacious main floor living room, together with over 1,000 square feet of newly added decking space to enjoy the incredible views at 7 Castles Ranch. Downstairs, a full lounge, sauna, wet/dry bar, and hot tub assures you plenty of space for family and friends to spread out and enjoy each other and the Ranch after a full day of adventure.</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+{partial-activities}
+
+{layout:set name="js"}
+
+<script>
+    $(document).ready(function(){
+        $(".main-hero").slick({
+            lazyLoad: 'ondemand',
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            fade: true,
+            cssEase: 'linear',
+            arrows: false,
+            pauseOnFocus: false,
+            dots: true,
+        });
+
+    });
+
+</script>
+
+{/layout:set}

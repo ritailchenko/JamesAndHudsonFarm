@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>{if layout:title} {layout:title} : {/if} James + Hudson Farm</title>
+    <meta name="description" content="{if layout:description}{layout:description}{/if}" />
+    {if layout:keywords}
+    <meta name="keywords" content="{layout:keywords}" />{/if}
+    <meta property="og:title" content="James + Hudson Farm" />
+    <meta property="og:type" content="website" />
+    {if layout:image_alt}
+    <meta property="og:image:alt" content="{layout:image_alt}" />{/if}
+    <meta property="og:image"
+        content="{if layout:image_alt}{layout:image_alt}[if:else}https://7castlesranch.com/img/hero-slide-02.jpg{/if}" />
+    <meta property="og:description" content="{if layout:description}{layout:description}{/if}" />
+    <meta property="og:url" content="{current_url}" />
+
+    {if current_url *= "localhost" OR current_url *= "staging"}
+    <meta name="robots" content="noindex, nofollow">
+    {if:else}
+    <meta name="robots" content="index, follow">
+    {/if}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.typekit.net/fql1elq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="/css/styles.min.css?cache={current_time}" media="all">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="intro-location">
+            {!-- Aspen &nbsp; &bull; &nbsp; Basalt &nbsp; &bull; &nbsp; Colorado --}
+        </h1>
+
+        <div class="bg-dark-red announcement">
+            <p class="text-white"><strong>COVID-19</strong> Guidelines are important to us. Read more about our policies
+                and procedures <a href="#" class="text-white text-underline modal-btn" data-toggle="modal"
+                    data-type="html" data-title="COVID-19" data-body="#covid19" data-target="#modal">click here</a>.</p>
+        </div>
+        <div class="nav-position"></div>
+        <div class="nav-content">
+            <nav>
+                <a href="/" class="logo">
+                    <img src="/img/logo-jandh.png" alt="logo" class="logo-icon" />
+                    <img src="/img/logo.svg" alt="James and Hudson Farm" />
+                </a>
+                <ul class="nav-list">
+                    <li><a class="jumper" href="#farm">The Farm House</a></li>
+                    <li><a class="jumper" href="#barn">Three Wishes Barn</a></li>
+                    <li><a class="jumper" href="#events">Events</a></li>
+                    <li><a class="jumper" href="#amenities">Amenities</a></li>
+                    <!-- <li><a href="/about">About</a></li> -->
+                    <li><a href="/contact">Contact</a></li>
+                    <li>
+                        <script type="text/javascript" async="async" 
+                            class="embed-ldgfy-script-loader embed-ldgfy-button-script-loader" 
+                            src="//cdn.lodgify.com/themes/shared/v3/assets/latest/embed-ldgfy-button.min.js" 
+                            data-website-id="311816" data-website-slug="7castlesranch" 
+                            data-domain="lodgify.com" 
+                            data-property-id="327406" 
+                            data-culture="en" data-text="Book Now" 
+                            data-target="_blank" 
+                            data-bg-color="#FFF" 
+                            data-text-color="#000"
+                            data-class-name="btn-box" 
+                            data-currency="USD"></script>
+                        
+                    </li>
+                </ul>
+                <a href="#" class="mobile-nav">
+                    <span class="line-one"></span>
+                    <span class="line-two"></span>
+                    <span class="line-three"></span>
+                </a>
+            </nav>
+        </div>
+
+    </header>
+
+
+    {layout:contents}
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="header1 font-style2 text-center text-uppercase mt-5 pt-1"><strong>James + Hudson
+                            Farm</strong></h1>
+                    <p class="font-style2 mb-5 pb-1 ext-x-large"><em>A beautiful estate set in the Berkshire Mountains
+                            in upstate New York</em></p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-center pb-5 mb-5">
+                <div class="col-nav one-col mb-5">
+
+                    <script type="text/javascript" async="async" 
+                        class="embed-ldgfy-script-loader embed-ldgfy-button-script-loader" 
+                        src="//cdn.lodgify.com/themes/shared/v3/assets/latest/embed-ldgfy-button.min.js" 
+                        data-website-id="311816" data-website-slug="7castlesranch" 
+                        data-domain="lodgify.com" 
+                        data-property-id="327406" 
+                        data-culture="en" data-text="Book Now" 
+                        data-target="_blank" 
+                        data-bg-color="#FFF" 
+                        data-text-color="#000" 
+                        data-class-name="btn-box-border text-large"
+                        data-currency="USD"></script>
+                </div>
+
+                <!--                 
+                <div class="col-nav one-col">
+                    <h4 class="font-style1">Information</h4>
+                    <ul class="footer-nav list-unstyled font-style2">
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a class="jumper" href="#property">The Property</a></li>
+                    </ul>
+                </div>
+                <div class="col-nav two-col">
+                    <h4 class="font-style1">Activities</h4>
+                    <ul class="footer-nav list-unstyled font-style2 card-columns">
+                        {exp:channel:entries channel="activities" limit="8" dynamic="no"}
+                        <li><a href="{title_permalink='activities'}">{title}</a></li>
+                        {/exp:channel:entries}
+                    </ul>
+                </div>
+                <div class="col-nav one-col">
+                    <h4 class="font-style1">Social</h4>
+                    <ul class="footer-nav list-unstyled font-style2">
+                        <li><a href="https://www.airbnb.com/rooms/45952710" target="_blank" rel="noreferrer">Airbnb</a></li>
+                        <li><a href="https://www.facebook.com/7castlesranch" target="_blank" rel="noreferrer">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/7castlesranch/" target="_blank" rel="noreferrer">Instagram</a></li>
+                    </ul>
+                </div> -->
+            </div>
+            <section class="d-flex flex-column flex-md-row mb-5 pb-5 justify-content-center align-items-center">
+                <span class="show-desktop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>300 Wemple Road
+                <span class="lazy-image" data-class="footer-logo" data-alt="logo"
+                    data-image="/img/logo-jandh.png"></span>
+                Stephentown, NY 12168
+            </section>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="line-one"></span>
+                        <span class="line-two"></span>
+                    </button>
+                    <h4 class="modal-title">
+
+                    </h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAL CONTENT -->
+    <div id='covid19' style="display: none;">
+        <p>Our cleaning staff comes well trained in COVID-19 cleaning protocols. Following our enhanced COVID-19
+            cleaning routine, all staff wash their hands immediately upon arrival and wear gloves and masks the entire
+            time on site. The cleaning staff at James and Hudson Farm disinfects frequently touched surfaces and objects
+            using a product from EPA’s list of approved products that are effective against SARS-CoV-2, the virus that
+            causes COVID-19 disease.</p>
+
+        <h5 class="mt-4 pt-1 mb-3">
+            <strong>
+                High-touch surfaces
+            </strong>
+        </h5>
+        <p>After each stay, our professional cleaning staff utilize a two-step approach for cleaning high-touch
+            surfaces: we use a detergent or soap and hot water for visibly dirty surfaces followed by disinfection to
+            kill germs on surfaces after they have dried.</p>
+
+        <p>Examples of high-touch surfaces include tables, hard-backed chairs, doorknobs, handrails, light switches,
+            remotes, wardrobe and cabinet handles, counters, toilets, sinks, bedside tables, and kitchen and bathroom
+            surfaces.</p>
+
+        <h5 class="mt-4 pt-1 mb-3">
+            <strong>
+                Low-touch surfaces
+            </strong>
+        </h5>
+        <p>Floors, walls, blinds, and other low-touch surfaces are cleaned using hot water and detergent. Mopped and/or
+            wiped down from one end of the surface to the other.</p>
+        <p>Towels, linens, and other laundry are handled by staff wearing disposable gloves when handling dirty laundry
+            and discarded after each use. All laundry is washed on the warmest setting with the sanitize feature then
+            staff make beds and fold the laundry with a fresh set of disposable gloves to ensure no cross contamination.
+        </p>
+        <small><a href="https://coronavirus.health.ny.gov/home" target="_blank" rel="noreferrer">Click here</a> to keep
+            up to date with New York Health and Safety guidelines surrounding COVID-19.</small>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
+        defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/app-min.js?cache={current_time}" defer></script>
+
+    {layout:js}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0G4NDDV5N1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0G4NDDV5N1');
+    </script>
+
+</body>
+
+</html>
